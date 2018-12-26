@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "6f26271d-a69a-44d9-9ab7-2c099c6ebac8",
+		"name": "SignUPProcess",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9999/getUser/fff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"getUser",
+						"fff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addConsumerProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"firstName\":\"firstName\",\n\"lastName\":\"fff\",\n\"phoneNumber\":\"fff\",\n\"address\":{\n\"line1\":\"fff\",\n\"line2\":\"fff\",\n\"city\":\"ffff\",\n\"state\":\"fff\",\n\"zipcode\":\"afffa\"\n},\n\"consumerData\":{\n\"email\":\"fff\"\n},\n\"user\":{\n\"email\":\"fff\",\n\"userName\":\"fff\",\n\"password\":\"fff\"\n}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9999/addConsumerProfile/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"addConsumerProfile",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verfiyUserLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"email\": \"fff\",\n        \"password\": \"fdfsdfff\",\n        \"userName\": \"fff\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:9999/userlogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"userlogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchConsumerReferral",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9999/searchConsumerReferral/firstKjAD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"searchConsumerReferral",
+						"firstKjAD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getConsumer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9999/getConsumer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"getConsumer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllConsumers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9999/getAllConsumers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"getAllConsumers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verifyEmailLinks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9999/verifyEmailAddress?Context=aSXGd20t48S/kwQqAZfP+n2EyXJKaEU9ld9jdiNSmeg=$Z+vU9ok+N9akyOMmoAsN3N5XTWiU2g+nXHl/GzIRh+o=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"verifyEmailAddress"
+					],
+					"query": [
+						{
+							"key": "Context",
+							"value": "aSXGd20t48S/kwQqAZfP+n2EyXJKaEU9ld9jdiNSmeg=$Z+vU9ok+N9akyOMmoAsN3N5XTWiU2g+nXHl/GzIRh+o="
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
