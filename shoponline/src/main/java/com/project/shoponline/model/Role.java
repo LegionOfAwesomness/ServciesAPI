@@ -7,6 +7,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
@@ -21,11 +23,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Role {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int roleId;
 	private String role;
 	@Enumerated(EnumType.STRING)
 	private RoleType roleType;
-	@ManyToMany()
+	@ManyToMany(mappedBy="roles")
 	private List<User> users;
 	public Role() {
 	}
