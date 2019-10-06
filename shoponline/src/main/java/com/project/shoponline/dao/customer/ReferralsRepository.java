@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.project.shoponline.model.Referrals;
+import com.project.shoponline.model.module1.Referrals;
 
 @Repository
 public interface ReferralsRepository extends CrudRepository<Referrals, Long> {

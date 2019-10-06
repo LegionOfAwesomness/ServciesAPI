@@ -6,11 +6,12 @@ import java.util.Optional;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.project.shoponline.model.User;
+import com.project.shoponline.model.module1.User;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
 	// Consumer findByconsumerId(Long id);
 	List<User> findByUserNameOrEmail(String userName, String email);
-	Optional<User>  findByUserId(long id);
+	//Optional<User> findByUseOrEmail(String userName, String email);
+//	Optional<User>  findByUserId(long id);
 }

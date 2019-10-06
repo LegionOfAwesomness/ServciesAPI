@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.project.shoponline.model.ApiError;
+import com.project.shoponline.model.module1.ApiError;
 
 //@Order(Ordered.HIGHEST_PRECEDENCE)
 @ControllerAdvice

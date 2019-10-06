@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.project.shoponline.model.Consumer;
-import com.project.shoponline.model.ConsumerData;
+import com.project.shoponline.model.module1.Consumer;
+import com.project.shoponline.model.module1.ConsumerData;
 
 @Repository
 public interface ConsumerDataRepository extends CrudRepository<ConsumerData, Long> {
